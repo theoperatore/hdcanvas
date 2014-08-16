@@ -67,7 +67,7 @@ document.body.appendChild(cvs);
 document.addEventListener('resize', function(ev) {
   
   // resize the canvas to the new dimensions
-  cvs = hdc.hdify(cvs, newWidth, newHeight);
+  cvs = HDCANVAS.hdify(cvs, newWidth, newHeight);
 
 }, false);
 ```

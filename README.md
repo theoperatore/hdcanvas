@@ -11,7 +11,7 @@ Install
 **via npm:**
 
 ```bash
-$ npm install hdcanvas
+$ npm install hd-canvas
 ```
 
 **via git to use in a `<script>` tag:**
@@ -28,7 +28,7 @@ Usage
 Just require the module and hdify!
 
 ```javascript
-var hdc = require('hdcanvas'),
+var hdc = require('hd-canvas'),
     cvs = document.createElement('canvas'),
 
     // cvs    - target canvas element

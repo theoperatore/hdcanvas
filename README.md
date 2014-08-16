@@ -1,7 +1,7 @@
 HD-Canvas
 =========
 
-Scales a target `<canvas>` drawing context according to the `devicePixelRatio` creating a high resolution `<canvas>`.
+Scales a target `<canvas>` according to the `devicePixelRatio` and `backingStoreData`.
 
 Scaling based off of this [HTML5Rocks article](http://www.html5rocks.com/en/tutorials/canvas/hidpi/).
 

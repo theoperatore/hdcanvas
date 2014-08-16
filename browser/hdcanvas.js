@@ -12,11 +12,11 @@ var HDCANVAS = {
 
     var dpr = window.devicePixelRatio || 1,
         bsr = ctx.webkitBackingStorePixelRatio ||
-        ctx.mozBackingStorePixelRatio    ||
-        ctx.msBackingStorePixelRatio     ||
-        ctx.oBackingStorePixelRatio      ||
-        ctx.backingStorePixelRatio       ||
-        1;
+              ctx.mozBackingStorePixelRatio    ||
+              ctx.msBackingStorePixelRatio     ||
+              ctx.oBackingStorePixelRatio      ||
+              ctx.backingStorePixelRatio       ||
+              1;
 
     ratio = dpr / bsr;
 

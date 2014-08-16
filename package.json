@@ -1,0 +1,24 @@
+{
+  "name": "hd-canvas",
+  "version": "0.1.0",
+  "description": "Scales a target <canvas> drawing context according to the 'devicePixelRatio' creating a high resolution <canvas>.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theoperatore/hdcanvas"
+  },
+  "keywords": [
+    "hd",
+    "canvas",
+    "hd-canvas"
+  ],
+  "author": "Alex Petersen <theoperatore@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theoperatore/hdcanvas/issues"
+  },
+  "homepage": "https://github.com/theoperatore/hdcanvas"
+}

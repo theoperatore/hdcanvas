@@ -50,7 +50,7 @@ document.addEventListener('resize', function(ev) {
 **via browser:**
 
 ```html
-<script src="./path/to/scripts/hdcanvas/src/browser/hdcanvas.min.js" type="text/javascript"></script>
+<script src="./path/to/scripts/hdcanvas/browser/hdcanvas.min.js" type="text/javascript"></script>
 ```
 
 Now use the global module to hdify!

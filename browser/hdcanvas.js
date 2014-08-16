@@ -3,8 +3,8 @@ var HDCANVAS = {
   hdify : function(targetCanvas, cssWidth, cssHeight) {
     "use strict";
     
-    if (arguments.length != 3) {
-      throw new Error("Invalid Number of Arguments:", arguments.length);
+    if (!targetCanvas) {
+      throw new Error("Error: Must specify a target!");
     }
 
     var ctx = targetCanvas.getContext('2d'),
@@ -22,11 +22,14 @@ var HDCANVAS = {
 
     if (dpr !== bsr) {
 
-      targetCanvas.width  = cssWidth * ratio;
-      targetCanvas.height = cssHeight * ratio;
+      var width  = cssWidth  || targetCanvas.width,
+          height = cssHeight || targetCanvas.height;
 
-      targetCanvas.style.width  = (cssWidth) + "px";
-      targetCanvas.style.height = (cssHeight) + "px";
+      targetCanvas.width  = width * ratio;
+      targetCanvas.height = height * ratio;
+
+      targetCanvas.style.width  = width + "px";
+      targetCanvas.style.height = height + "px";
 
       ctx.scale(ratio,ratio);
     }

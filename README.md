@@ -23,24 +23,28 @@ $ git clone https://github.com/theoperatore/hdcanvas.git
 Usage
 =====
 
+The target `canvas` is the only required parameter with `width` and `height` parameters optional.
+
+If `width` and `height` aren't specifed, the dimensions of the target canvas are used.
+
 **via node.js:**
 
 Just require the module and hdify!
 
 ```javascript
-var hdc = require('hd-canvas'),
+var hdify = require('hd-canvas'),
     cvs = document.createElement('canvas'),
 
     // cvs    - target canvas element
     // width  - desired width of canvas element
     // height - desired height of canvas element
-    cvs = hdc.hdify(cvs, width, height);
+    cvs = hdify(cvs, width, height);
 
 document.body.appendChild(cvs);
 document.addEventListener('resize', function(ev) {
   
   // resize the canvas to the new dimensions
-  cvs = hdc.hdify(cvs, newWidth, newHeight);
+  cvs = hdify(cvs, newWidth, newHeight);
 
 }, false);
 ```

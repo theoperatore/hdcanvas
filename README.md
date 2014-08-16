@@ -33,12 +33,12 @@ Just require the module and hdify!
 
 ```javascript
 var hdify = require('hd-canvas'),
-    cvs = document.createElement('canvas'),
+    cvs = document.createElement('canvas');
 
-    // cvs    - target canvas element
-    // width  - desired width of canvas element
-    // height - desired height of canvas element
-    cvs = hdify(cvs, width, height);
+// cvs    - target canvas element
+// width  - desired width of canvas element
+// height - desired height of canvas element
+cvs = hdify(cvs, width, height);
 
 document.body.appendChild(cvs);
 document.addEventListener('resize', function(ev) {

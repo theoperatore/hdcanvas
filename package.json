@@ -1,6 +1,6 @@
 {
   "name": "hd-canvas",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Scales a target <canvas> according to the devicePixelRatio and backingStoreData",
   "main": "./lib/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "hd",
     "canvas",
-    "hd-canvas"
+    "hd-canvas",
+    "retina"
   ],
   "author": "Alex Petersen <theoperatore@gmail.com>",
   "license": "MIT",

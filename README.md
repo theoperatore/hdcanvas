@@ -54,10 +54,10 @@ document.addEventListener('resize', function(ev) {
 **via browser:**
 
 ```html
-<script src="./path/to/scripts/hdcanvas/browser/hdcanvas.min.js" type="text/javascript"></script>
+<script src="./path/to/hdcanvas/browser/hdcanvas.min.js" type="text/javascript"></script>
 ```
 
-Now use the global module to hdify!
+and in javascript:
 
 ```javascript
 var cvs = document.createElement('canvas');
@@ -65,13 +65,13 @@ var cvs = document.createElement('canvas');
 // cvs    - target canvas element
 // width  - desired width of canvas element
 // height - desired height of canvas element
-cvs = HDCANVAS.hdfiy(cvs, width, height);
+cvs = HDCANVAS(cvs, width, height);
 
 document.body.appendChild(cvs);
 document.addEventListener('resize', function(ev) {
   
   // resize the canvas to the new dimensions
-  cvs = HDCANVAS.hdify(cvs, newWidth, newHeight);
+  cvs = HDCANVAS(cvs, newWidth, newHeight);
 
 }, false);
 ```

@@ -1,6 +1,6 @@
 {
   "name": "hd-canvas",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Scales a target <canvas> according to the devicePixelRatio and backingStoreData",
   "main": "./lib/index.js",
   "scripts": {
